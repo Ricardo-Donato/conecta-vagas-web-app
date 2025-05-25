@@ -2,23 +2,24 @@ import Link from "next/link";
 import StyleIndex from "@/styles/Home.module.css";
 
 export default function Home() {
-  return (<><header>
-    <div className="container">
-      <div className="logo">
-        <Link href="/">
-          <h1>ConectaVagas</h1>
-        </Link>
+  return (<>
+    <header>
+      <div className="container">
+        <div className="logo">
+          <Link href="/">
+            <h1>ConectaVagas</h1>
+          </Link>
+        </div>
+        <nav>
+          <ul>
+            <li><Link href="/">Início</Link></li>
+            <li><Link href="/sobre">Sobre</Link></li>
+            <li><Link href="/contato">Contato</Link></li>
+            <li><Link href="/login" className="btn-login">Login</Link></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><Link href="/">Início</Link></li>
-          <li><Link href="/sobre">Sobre</Link></li>
-          <li><Link href="/contato">Contato</Link></li>
-          <li><Link href="/login" className="btn-login">Login</Link></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
     <main>
       <section className="hero">
         <div className="container">
