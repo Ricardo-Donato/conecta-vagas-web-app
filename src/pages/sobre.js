@@ -5,16 +5,16 @@ export default function Sobre() {
         <header className={sobreStyle.header}>
             <div className="container">
                 <div className="logo">
-                    <a href="../index.html">
+                    <Link href="../index.html">
                         <h1 className={sobreStyle.h1}>ConectaVagas</h1>
-                    </a>
+                    </Link>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="login.html" className="btn-login">Login</a></li>
+                        <li><Link href="../index.html">Início</Link></li>
+                        <li><Link href="sobre.html">Sobre</Link></li>
+                        <li><Link href="contato.html">Contato</Link></li>
+                        <li><Link href="login.html" className="btn-login">Login</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -66,11 +66,11 @@ export default function Sobre() {
                     <div className="footer-links">
                         <h3>Links Rápidos</h3>
                         <ul>
-                            <li><a href="../index.html">Início</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="cadastro.html">Cadastre-se</a></li>
-                            <li><a href="termos_privacidade.html">Termos de Uso e Política de Privacidade</a></li>
+                            <li><Link href="../index.html">Início</Link></li>
+                            <li><Link href="contato.html">Contato</Link></li>
+                            <li><Link href="login.html">Login</Link></li>
+                            <li><Link href="cadastro.html">Cadastre-se</Link></li>
+                            <li><Link href="termos_privacidade.html">Termos de Uso e Política de Privacidade</Link></li>
                         </ul>
                     </div>
                     <div className="footer-contact">
@@ -78,10 +78,10 @@ export default function Sobre() {
                         <p className={sobreStyle.p}><i className="fas fa-envelope"></i> contato@conectavagas.com</p>
                         <p className={sobreStyle.p}><i className="fas fa-phone"></i> (11) 1234-5678</p>
                         <div className="social-media">
-                            <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-linkedin"></i></a>
+                            <Link href="#"><i className="fab fa-facebook"></i></Link>
+                            <Link href="#"><i className="fab fa-twitter"></i></Link>
+                            <Link href="#"><i className="fab fa-instagram"></i></Link>
+                            <Link href="#"><i className="fab fa-linkedin"></i></Link>
                         </div>
                     </div>
                 </div>
