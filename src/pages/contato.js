@@ -42,30 +42,29 @@ export default function Contato() {
                     </nav>
                 </div>
             </header>
-            <main className="main">
+            <main className={contatoStyle.main}>
                 <div className="container">
                     {mensagemStatus && (
                         <div id="message-container" className="success">
                             {mensagemStatus}
                         </div>
                     )}
-                    <div class="contact-container">
-                        <div class="contact-header">
+                    <div className={contatoStyle.contact-container}>
+                        <div className={contatoStyle.contact-header}>
                             <h2>Entre em Contato</h2>
                             <p>Fale conosco! Estamos prontos para ajudar você.</p>
                         </div>
-                        <div class="contact-info">
-                            <p><i class="fas fa-envelope"></i> <a
-                                href="mailto:contato@conectavagas.com">contato@conectavagas.com</a></p>
-                            <p><i class="fas fa-phone"></i> <a href="tel:1112345678">(11) 1234-5678</a></p>
-                            <div class="social-media">
-                                <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                                <a href="#" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <div className={contatoStyle.contact-info}>
+                            <p><i className="fas fa-envelope"></i> <Link href="mailto:contato@conectavagas.com">contato@conectavagas.com</Link></p>
+                            <p><i className="fas fa-phone"></i> <Link href="tel:1112345678">(11) 1234-5678</Link></p>
+                            <div className={contatoStyle.social-media}>
+                                <Link href="#" title="Facebook" target="_blank"><i className="fab fa-facebook"></i></Link>
+                                <Link href="#" title="Twitter" target="_blank"><i className="fab fa-twitter"></i></Link>
+                                <Link href="#" title="Instagram" target="_blank"><i className="fab fa-instagram"></i></Link>
+                                <Link href="#" title="LinkedIn" target="_blank"><i className="fab fa-linkedin"></i></Link>
                             </div>
                         </div>
-                        <form onSubmit={handleContact} className="contact-form" autoComplete="off">
+                        <form onSubmit={handleContact} className={contatoStyle.contact-form} autoComplete="off">
                             <label htmlFor="nome">Nome</label>
                             <input
                                 type="text"
@@ -119,7 +118,7 @@ export default function Contato() {
                             <h3>Contato</h3>
                             <p><i className="fas fa-envelope"></i> contato@conectavagas.com</p>
                             <p><i className="fas fa-phone"></i> (11) 1234-5678</p>
-                            <div className="social-media rodape-social">
+                            <div className={`${contatoStyle.social-media} ${contatoStyle.rodapeSocial}`}>
                                 <Link href="#"><i className="fab fa-facebook"></i></Link>
                                 <Link href="#"><i className="fab fa-twitter"></i></Link>
                                 <Link href="#"><i className="fab fa-instagram"></i></Link>

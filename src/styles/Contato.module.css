@@ -26,7 +26,7 @@
 }
 
 .contact-info p,
-.contact-info a {
+.contact-info Link {
     font-size: 1.1rem;
     color: #333;
     display: flex;
@@ -35,7 +35,7 @@
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info Link:hover {
     color: var(--primary-color, #007bff);
 }
 
@@ -45,21 +45,21 @@
     margin-top: 10px;
 }
 
-.social-media a {
+.social-media Link {
     font-size: 1.5rem;
     color: #333;
     transition: color 0.2s;
 }
 
-.social-media a:hover {
+.social-media Link:hover {
     color: #333;
 }
 
-.rodape-social a {
+.rodape-social Link {
     color: #fff;
 }
 
-.rodape-social a:hover {
+.rodape-social Link:hover {
     color: #fff;
 }
 
