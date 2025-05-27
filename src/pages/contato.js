@@ -95,3 +95,77 @@ export default function Contato() {
     </>
     );
 }
+
+// src/pages/contato.js
+import { useState } from "react";
+import contatoStyle from "@/styles/Contato.module.css";
+import { useRouter } from "next/router";
+
+export default function Contato() {
+    const [formData, setFormData] = useState({ nome: "", email: "", mensagem: "" });
+    const [mensagemStatus, setMensagemStatus] = useState(null);
+    const router = useRouter();
+
+    function handleChange(e) {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    }
+
+    function handleContact(event) {
+        event.preventDefault();
+
+        console.log("Contact data:", formData);
+        setMensagemStatus("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+
+        setTimeout(() => {
+            router.push("/"); // Redireciona para a home
+        }, 2500);
+    }
+
+    return (
+        <>
+            <main>
+                <div className="container">
+                    {mensagemStatus && (
+                        <div id="message-container" className="success">
+                            {mensagemStatus}
+                        </div>
+                    )}
+                    <form onSubmit={handleContact} className="contact-form" autoComplete="off">
+                        <label htmlFor="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            value={formData.nome}
+                            onChange={handleChange}
+                            required
+                        />
+
+                        <label htmlFor="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+
+                        <label htmlFor="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            value={formData.mensagem}
+                            onChange={handleChange}
+                            required
+                        />
+
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </main>
+        </>
+    );
+}
