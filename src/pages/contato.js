@@ -34,7 +34,6 @@ export default function Contato() {
       router.push("/");
     }, 2500);
   };
-  
     return (
         <>
             <header>
