@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import MessageContainer from "@/components/MessageContainer";
 import contatoStyle from "@/styles/Contato.module.css";
 
