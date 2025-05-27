@@ -42,43 +42,60 @@ export default function Contato() {
                     </nav>
                 </div>
             </header>
-            <main>
+            <main className="main">
                 <div className="container">
                     {mensagemStatus && (
                         <div id="message-container" className="success">
                             {mensagemStatus}
                         </div>
                     )}
-                    <form onSubmit={handleContact} className="contact-form" autoComplete="off">
-                        <label htmlFor="nome">Nome</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            value={formData.nome}
-                            onChange={handleChange}
-                            required
-                        />
-                        <label htmlFor="email">E-mail</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                        <label htmlFor="mensagem">Mensagem</label>
-                        <textarea
-                            id="mensagem"
-                            name="mensagem"
-                            rows="5"
-                            value={formData.mensagem}
-                            onChange={handleChange}
-                            required
-                        />
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
+                    <div class="contact-container">
+                        <div class="contact-header">
+                            <h2>Entre em Contato</h2>
+                            <p>Fale conosco! Estamos prontos para ajudar você.</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:contato@conectavagas.com">contato@conectavagas.com</a></p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:1112345678">(11) 1234-5678</a></p>
+                            <div class="social-media">
+                                <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <form onSubmit={handleContact} className="contact-form" autoComplete="off">
+                            <label htmlFor="nome">Nome</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                value={formData.nome}
+                                onChange={handleChange}
+                                required
+                            />
+                            <label htmlFor="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            <label htmlFor="mensagem">Mensagem</label>
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="5"
+                                value={formData.mensagem}
+                                onChange={handleChange}
+                                required
+                            />
+                            <button type="submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
                 </div>
             </main>
             <footer>
