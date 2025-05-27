@@ -8,7 +8,7 @@ export default function Contato() {
   const [messageType, setMessageType] = useState("");
   const router = useRouter();
 
-  // Função que imita o showMessage original
+  // Função que imita o showMessage original de HTML e JavaScript
   const showMessage = useCallback((type, texto) => {
     setMessageType(type);
     setMessage(texto);
@@ -26,10 +26,8 @@ export default function Contato() {
     const obj = Object.fromEntries(dados.entries());
     console.log("Contact data:", obj);
 
-    // Chama o ?showMessage? igual no seu main.js
     showMessage("success", "Mensagem enviada com sucesso! Em breve entraremos em contato.");
 
-    // Após 2,5 s, faz o push
     setTimeout(() => {
       router.push("/");
     }, 2500);
