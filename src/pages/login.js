@@ -4,6 +4,11 @@ import Link from "next/link";
 import MessageContainer from "@/components/MessageContainer";
 import loginStyle from "@/styles/Login.module.css";
 
+function isValidEmail(email) {
+    // Validação simples de e-mail
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 export default function Login() {
     const [userType, setUserType] = useState("candidato");
     const [formData, setFormData] = useState({ email: "", senha: "" });
@@ -23,19 +28,34 @@ export default function Login() {
         }));
     };
 
+    function validateLoginData(data) {
+        let isValid = true;
+        const errors = [];
+
+        if (!data.email || !isValidEmail(data.email)) {
+            errors.push("E-mail inválido");
+            isValid = false;
+        }
+        if (!data.senha) {
+            errors.push("Senha é obrigatória");
+            isValid = false;
+        }
+        if (!isValid) {
+            setMessageType("error");
+            setMessage(errors.join(" | "));
+        }
+        return isValid;
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar a lógica de autenticação
-        if (!formData.email || !formData.senha) {
-            setMessageType("error");
-            setMessage("Preencha todos os campos.");
-            return;
+        if (validateLoginData(formData)) {
+            setMessageType("success");
+            setMessage("Login realizado com sucesso! Redirecionando ao dashboard...");
+            setTimeout(() => {
+                router.push(`/dashboard-${userType}`);
+            }, 2000);
         }
-        setMessageType("success");
-        setMessage("Login realizado com sucesso!");
-        setTimeout(() => {
-            router.push("/");
-        }, 2000);
     };
 
     const clearMessage = () => {
@@ -96,7 +116,11 @@ export default function Login() {
                             </button>
                         </div>
 
-                        <form className={loginStyle["login-form"]} onSubmit={handleSubmit} autoComplete="off">
+                        <form
+                            className={loginStyle["login-form"]}
+                            onSubmit={handleSubmit}
+                            autoComplete="off"
+                        >
                             <div className={loginStyle["form-group"]}>
                                 <label htmlFor="email">Email</label>
                                 <input
@@ -131,7 +155,6 @@ export default function Login() {
                             </div>
 
                             <button type="submit" className={loginStyle["login-button"]}>Entrar</button>
-
                             <input type="hidden" name="userType" value={userType} />
                         </form>
 
