@@ -19,15 +19,15 @@ export default function Contato() {
         setMensagemStatus("Mensagem enviada com sucesso! Em breve entraremos em contato.");
 
         setTimeout(() => {
-            router.push("/"); // Redireciona para a home
+            router.push("/");
         }, 2500);
     }
 
     return (
         <>
             <header>
-                <div class="container">
-                    <div class="logo">
+                <div className="container">
+                    <div className="logo">
                         <a href="../index.html">
                             <h1>ConectaVagas</h1>
                         </a>
@@ -36,8 +36,8 @@ export default function Contato() {
                         <ul>
                             <li><a href="../index.html">Início</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="contato.html" class="active">Contato</a></li>
-                            <li><a href="login.html" class="btn-login">Login</a></li>
+                            <li><a href="contato.html" className="active">Contato</a></li>
+                            <li><a href="login.html" className="btn-login">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -82,13 +82,13 @@ export default function Contato() {
                 </div>
             </main>
             <footer>
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-logo">
+                <div className="container">
+                    <div className="footer-content">
+                        <div className="footer-logo">
                             <h2>ConectaVagas</h2>
                             <p>Encontre talentos, encontre futuro</p>
                         </div>
-                        <div class="footer-links">
+                        <div className="footer-links">
                             <h3>Links Rápidos</h3>
                             <ul>
                                 <li><a href="../index.html">Início</a></li>
@@ -98,19 +98,19 @@ export default function Contato() {
                                 <li><a href="termos_privacidade.html">Termos de Uso e Política de Privacidade</a></li>
                             </ul>
                         </div>
-                        <div class="footer-contact">
+                        <div className="footer-contact">
                             <h3>Contato</h3>
-                            <p><i class="fas fa-envelope"></i> contato@conectavagas.com</p>
-                            <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
-                            <div class="social-media rodape-social">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <p><i className="fas fa-envelope"></i> contato@conectavagas.com</p>
+                            <p><i className="fas fa-phone"></i> (11) 1234-5678</p>
+                            <div className="social-media rodape-social">
+                                <a href="#"><i className="fab fa-facebook"></i></a>
+                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="#"><i className="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
+                    <div className="footer-bottom">
                         <p>&copy; 2025 ConectaVagas. Todos os direitos reservados.</p>
                         <p>Projeto desenvolvido por Pedro Ricardo Donato da Silva</p>
                     </div>
