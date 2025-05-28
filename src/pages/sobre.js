@@ -6,16 +6,16 @@ export default function Sobre() {
         <header className={sobreStyle.header}>
             <div className="container">
                 <div className="logo">
-                    <Link href="../index.html">
+                    <Link href="..//index">
                         <h1 className={sobreStyle.h1}>ConectaVagas</h1>
                     </Link>
                 </div>
                 <nav>
                     <ul>
-                        <li><Link href="../index.html">Início</Link></li>
-                        <li><Link href="sobre.html">Sobre</Link></li>
-                        <li><Link href="contato.html">Contato</Link></li>
-                        <li><Link href="login.html" className="btn-login">Login</Link></li>
+                        <li><Link href="../">Início</Link></li>
+                        <li><Link href="/sobre">Sobre</Link></li>
+                        <li><Link href="/contato">Contato</Link></li>
+                        <li><Link href="/login" className="btn-login">Login</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -67,11 +67,11 @@ export default function Sobre() {
                     <div className="footer-links">
                         <h3>Links Rápidos</h3>
                         <ul>
-                            <li><Link href="../index.html">Início</Link></li>
-                            <li><Link href="contato.html">Contato</Link></li>
-                            <li><Link href="login.html">Login</Link></li>
-                            <li><Link href="cadastro.html">Cadastre-se</Link></li>
-                            <li><Link href="termos_privacidade.html">Termos de Uso e Política de Privacidade</Link></li>
+                            <li><Link href="../index">Início</Link></li>
+                            <li><Link href="/contato">Contato</Link></li>
+                            <li><Link href="/login">Login</Link></li>
+                            <li><Link href="/cadastro">Cadastre-se</Link></li>
+                            <li><Link href="/termos_privacidade">Termos de Uso e Política de Privacidade</Link></li>
                         </ul>
                     </div>
                     <div className="footer-contact">

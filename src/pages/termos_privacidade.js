@@ -13,7 +13,7 @@ export default function Termos() {
                     </div>
                     <nav>
                         <ul>
-                            <li><Link href="/">Início</Link></li>
+                            <li><Link href="/">Inï¿½cio</Link></li>
                             <li><Link href="/sobre">Sobre</Link></li>
                             <li><Link href="/contato">Contato</Link></li>
                             <li><Link href="/login" className="btn-login">Login</Link></li>
@@ -24,94 +24,94 @@ export default function Termos() {
 
             <main>
                 <div className="container">
-                    <h2>Termos de Uso e Política de Privacidade</h2>
+                    <h2>Termos de Uso e Polï¿½tica de Privacidade</h2>
                     <p>
                         Seja bem-vindo ao <strong>ConectaVagas</strong> ? Encontre talentos, encontre futuro.<br />
-                        Esta plataforma, desenvolvida no contexto do curso de Ciência da Computação ? Bacharelado, tem como
-                        objetivo facilitar a integração entre empresas e candidatos no mercado de trabalho por meio de
-                        tecnologia, inteligência artificial e geolocalização.<br />
-                        Ao acessar ou utilizar o ConectaVagas, você concorda com os termos e condições a seguir.
+                        Esta plataforma, desenvolvida no contexto do curso de Ciï¿½ncia da Computaï¿½ï¿½o ? Bacharelado, tem como
+                        objetivo facilitar a integraï¿½ï¿½o entre empresas e candidatos no mercado de trabalho por meio de
+                        tecnologia, inteligï¿½ncia artificial e geolocalizaï¿½ï¿½o.<br />
+                        Ao acessar ou utilizar o ConectaVagas, vocï¿½ concorda com os termos e condiï¿½ï¿½es a seguir.
                     </p>
                     <br />
-                    <h3>1. Definições</h3>
+                    <h3>1. Definiï¿½ï¿½es</h3>
                     <ul>
-                        <li><strong>Usuário:</strong> Pessoa física (candidato) ou jurídica (empresa) cadastrada na plataforma.</li>
-                        <li><strong>ConectaVagas:</strong> Web App que promove a conexão entre empresas e candidatos.</li>
-                        <li><strong>IA:</strong> Mecanismos de inteligência artificial utilizados para análise de perfil,
-                            recomendação de vagas e currículos, entre outros.</li>
-                        <li><strong>Dados Pessoais:</strong> Qualquer informação que possa identificar direta ou indiretamente
-                            um usuário.</li>
+                        <li><strong>Usuï¿½rio:</strong> Pessoa fï¿½sica (candidato) ou jurï¿½dica (empresa) cadastrada na plataforma.</li>
+                        <li><strong>ConectaVagas:</strong> Web App que promove a conexï¿½o entre empresas e candidatos.</li>
+                        <li><strong>IA:</strong> Mecanismos de inteligï¿½ncia artificial utilizados para anï¿½lise de perfil,
+                            recomendaï¿½ï¿½o de vagas e currï¿½culos, entre outros.</li>
+                        <li><strong>Dados Pessoais:</strong> Qualquer informaï¿½ï¿½o que possa identificar direta ou indiretamente
+                            um usuï¿½rio.</li>
                     </ul>
                     <br />
                     <h3>2. Coleta e Uso de Dados</h3>
                     <p>
-                        Ao se cadastrar, você nos fornece informações pessoais e profissionais, como nome, e-mail, localização,
-                        currículo, CNPJ (no caso de empresas), entre outras.<br />
-                        Os dados são utilizados para:
+                        Ao se cadastrar, vocï¿½ nos fornece informaï¿½ï¿½es pessoais e profissionais, como nome, e-mail, localizaï¿½ï¿½o,
+                        currï¿½culo, CNPJ (no caso de empresas), entre outras.<br />
+                        Os dados sï¿½o utilizados para:
                     </p>
                     <ul>
-                        <li>Gerar recomendações personalizadas com base em IA;</li>
-                        <li>Sugerir vagas e candidatos com base na localização;</li>
-                        <li>Viabilizar a comunicação entre empresas e candidatos;</li>
-                        <li>Melhorar a experiência do usuário por meio de análises e melhorias contínuas da plataforma.</li>
+                        <li>Gerar recomendaï¿½ï¿½es personalizadas com base em IA;</li>
+                        <li>Sugerir vagas e candidatos com base na localizaï¿½ï¿½o;</li>
+                        <li>Viabilizar a comunicaï¿½ï¿½o entre empresas e candidatos;</li>
+                        <li>Melhorar a experiï¿½ncia do usuï¿½rio por meio de anï¿½lises e melhorias contï¿½nuas da plataforma.</li>
                     </ul>
                     <br />
                     <h3>3. Compartilhamento de Dados</h3>
                     <p>
-                        O ConectaVagas não vende nem compartilha seus dados com terceiros sem seu consentimento, exceto:
+                        O ConectaVagas nï¿½o vende nem compartilha seus dados com terceiros sem seu consentimento, exceto:
                     </p>
                     <ul>
-                        <li>Quando exigido por lei ou decisão judicial;</li>
+                        <li>Quando exigido por lei ou decisï¿½o judicial;</li>
                         <li>Para parceiros educacionais ou empresas contratantes vinculadas a trilhas de desenvolvimento, sempre
-                            de forma anonimizada ou mediante autorização expressa do usuário.</li>
+                            de forma anonimizada ou mediante autorizaï¿½ï¿½o expressa do usuï¿½rio.</li>
                     </ul>
                     <br />
-                    <h3>4. Segurança</h3>
+                    <h3>4. Seguranï¿½a</h3>
                     <p>
-                        Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados contra acesso não
-                        autorizado, perda, alteração ou destruição. A comunicação entre o navegador e nossos servidores é
+                        Implementamos medidas de seguranï¿½a tï¿½cnicas e organizacionais para proteger seus dados contra acesso nï¿½o
+                        autorizado, perda, alteraï¿½ï¿½o ou destruiï¿½ï¿½o. A comunicaï¿½ï¿½o entre o navegador e nossos servidores ï¿½
                         criptografada.
                     </p>
                     <br />
-                    <h3>5. Responsabilidades do Usuário</h3>
+                    <h3>5. Responsabilidades do Usuï¿½rio</h3>
                     <ul>
-                        <li>Fornecer informações verdadeiras e atualizadas;</li>
-                        <li>Não utilizar a plataforma para fins ilícitos ou prejudiciais;</li>
+                        <li>Fornecer informaï¿½ï¿½es verdadeiras e atualizadas;</li>
+                        <li>Nï¿½o utilizar a plataforma para fins ilï¿½citos ou prejudiciais;</li>
                         <li>Manter a confidencialidade de suas credenciais de acesso;</li>
-                        <li>Respeitar os demais usuários e os termos aqui descritos.</li>
+                        <li>Respeitar os demais usuï¿½rios e os termos aqui descritos.</li>
                     </ul>
                     <br />
-                    <h3>6. Direitos do Usuário</h3>
-                    <p>Você pode, a qualquer momento:</p>
+                    <h3>6. Direitos do Usuï¿½rio</h3>
+                    <p>Vocï¿½ pode, a qualquer momento:</p>
                     <ul>
                         <li>Acessar seus dados pessoais;</li>
-                        <li>Corrigir informações incorretas;</li>
+                        <li>Corrigir informaï¿½ï¿½es incorretas;</li>
                         <li>Excluir sua conta;</li>
-                        <li>Solicitar a exclusão dos seus dados da base do ConectaVagas, conforme a Lei Geral de Proteção de
+                        <li>Solicitar a exclusï¿½o dos seus dados da base do ConectaVagas, conforme a Lei Geral de Proteï¿½ï¿½o de
                             Dados (LGPD).</li>
                     </ul>
                     <br />
                     <h3>7. Cookies e Tecnologias de Rastreamento</h3>
                     <p>
-                        Utilizamos cookies e tecnologias semelhantes para melhorar a navegação e fornecer funcionalidades
-                        personalizadas, como salvar preferências de idioma, lembrar seu login e gerar estatísticas de uso da
+                        Utilizamos cookies e tecnologias semelhantes para melhorar a navegaï¿½ï¿½o e fornecer funcionalidades
+                        personalizadas, como salvar preferï¿½ncias de idioma, lembrar seu login e gerar estatï¿½sticas de uso da
                         plataforma.
                     </p>
                     <br />
-                    <h3>8. Alterações nesta Política</h3>
+                    <h3>8. Alteraï¿½ï¿½es nesta Polï¿½tica</h3>
                     <p>
-                        Esta política pode ser alterada periodicamente. Recomendamos que você a revise com frequência.
-                        Alterações significativas serão comunicadas por meio do e-mail cadastrado ou alertas na plataforma.
+                        Esta polï¿½tica pode ser alterada periodicamente. Recomendamos que vocï¿½ a revise com frequï¿½ncia.
+                        Alteraï¿½ï¿½es significativas serï¿½o comunicadas por meio do e-mail cadastrado ou alertas na plataforma.
                     </p>
                     <br />
                     <h3>9. Contato</h3>
                     <p>
-                        Para dúvidas, sugestões ou solicitações relacionadas à privacidade ou aos termos de uso, entre em
+                        Para dï¿½vidas, sugestï¿½es ou solicitaï¿½ï¿½es relacionadas ï¿½ privacidade ou aos termos de uso, entre em
                         contato pelo e-mail: <Link href="mailto:contato@conectavagas.com">contato@conectavagas.com</Link>.
                     </p>
 
                     <p style={{ marginTop: 32, fontWeight: 500 }}>
-                        ConectaVagas ? Unindo oportunidades e talentos com tecnologia, ética e acessibilidade.
+                        ConectaVagas ? Unindo oportunidades e talentos com tecnologia, ï¿½tica e acessibilidade.
                     </p>
                 </div>
             </main>
@@ -124,14 +124,14 @@ export default function Termos() {
                             <p>Encontre talentos, encontre futuro</p>
                         </div>
                         <div className="footer-links">
-                            <h3>Links Rápidos</h3>
+                            <h3>Links Rï¿½pidos</h3>
                             <ul>
-                                <li><Link href="/">Início</Link></li>
+                                <li><Link href="/">Inï¿½cio</Link></li>
                                 <li><Link href="/sobre">Sobre</Link></li>
                                 <li><Link href="/contato">Contato</Link></li>
                                 <li><Link href="/login">Login</Link></li>
                                 <li><Link href="/cadastro">Cadastre-se</Link></li>
-                                <li><Link href="/termos_privacidade">Termos de Uso e Política de Privacidade</Link></li>
+                                <li><Link href="/termos_privacidade">Termos de Uso e Polï¿½tica de Privacidade</Link></li>
                             </ul>
                         </div>
                         <div className="footer-contact">

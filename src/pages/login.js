@@ -5,7 +5,7 @@ import MessageContainer from "@/components/MessageContainer";
 import loginStyle from "@/styles/Login.module.css";
 
 function isValidEmail(email) {
-    // Validação simples de e-mail
+    // Validaï¿½ï¿½o simples de e-mail
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
@@ -33,11 +33,11 @@ export default function Login() {
         const errors = [];
 
         if (!data.email || !isValidEmail(data.email)) {
-            errors.push("E-mail inválido");
+            errors.push("E-mail invï¿½lido");
             isValid = false;
         }
         if (!data.senha) {
-            errors.push("Senha é obrigatória");
+            errors.push("Senha ï¿½ obrigatï¿½ria");
             isValid = false;
         }
         if (!isValid) {
@@ -74,7 +74,7 @@ export default function Login() {
                     </div>
                     <nav>
                         <ul>
-                            <li><Link href="/">Início</Link></li>
+                            <li><Link href="/">Inï¿½cio</Link></li>
                             <li><Link href="/sobre">Sobre</Link></li>
                             <li><Link href="/contato">Contato</Link></li>
                             <li><Link href="/login" className="btn-login">Login</Link></li>
@@ -160,7 +160,7 @@ export default function Login() {
 
                         <div className={loginStyle["register-link"]}>
                             <p>
-                                Ainda não tem uma conta?{" "}
+                                Ainda nï¿½o tem uma conta?{" "}
                                 <Link
                                     href={`/cadastro?tipo=${userType}`}
                                     id="register-link"
@@ -192,13 +192,13 @@ export default function Login() {
                             <p>Encontre talentos, encontre futuro</p>
                         </div>
                         <div className="footer-links">
-                            <h3>Links Rápidos</h3>
+                            <h3>Links Rï¿½pidos</h3>
                             <ul>
-                                <li><Link href="/">Início</Link></li>
+                                <li><Link href="/">Inï¿½cio</Link></li>
                                 <li><Link href="/sobre">Sobre</Link></li>
                                 <li><Link href="/contato">Contato</Link></li>
                                 <li><Link href="/cadastro">Cadastre-se</Link></li>
-                                <li><Link href="/termos_privacidade">Termos de Uso e Política de Privacidade</Link></li>
+                                <li><Link href="/termos_privacidade">Termos de Uso e Polï¿½tica de Privacidade</Link></li>
                             </ul>
                         </div>
                         <div className="footer-contact">

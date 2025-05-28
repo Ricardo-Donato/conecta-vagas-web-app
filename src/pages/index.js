@@ -28,8 +28,8 @@ export default function Home() {
             <p>Conectamos candidatos e empresas de forma inteligente, utilizando IA para criar as melhores
               combinações.</p>
             <div className="hero-buttons">
-              <a href="Pages/cadastro.html?tipo=candidato" className="btn btn-primary">Sou Candidato</a>
-              <a href="Pages/cadastro.html?tipo=empresa" className="btn btn-secondary">Sou Empresa</a>
+              <a href="Pages/cadastro?tipo=candidato" className="btn btn-primary">Sou Candidato</a>
+              <a href="Pages/cadastro?tipo=empresa" className="btn btn-secondary">Sou Empresa</a>
             </div>
           </div>
           <div className="hero-image">
@@ -137,12 +137,12 @@ export default function Home() {
           <div className="footer-links">
             <h3>Links Rápidos</h3>
             <ul>
-              {/* <li><a href="Pages/sobre.html">Sobre</a></li> */}
+              {/* <li><a href="Pages/sobre">Sobre</a></li> */}
               <li><Link href="/sobre">Sobre</Link></li>
-              <li><a href="Pages/contato.html">Contato</a></li>
-              <li><a href="Pages/login.html">Login</a></li>
-              <li><a href="Pages/cadastro.html">Cadastre-se</a></li>
-              <li><a href="Pages/termos_privacidade.html">Termos de Uso e Política de Privacidade</a></li>
+              <li><a href="Pages/contato">Contato</a></li>
+              <li><a href="Pages/login">Login</a></li>
+              <li><a href="Pages/cadastro">Cadastre-se</a></li>
+              <li><a href="Pages/termos_privacidade">Termos de Uso e Política de Privacidade</a></li>
             </ul>
           </div>
           <div className="footer-contact">
