@@ -561,7 +561,7 @@ select:focus {
   border-radius: 4px;
   max-width: 300px;
   z-index: 1000;
-  display: none;
+  display: block;
 }
 
 #message-container.success {

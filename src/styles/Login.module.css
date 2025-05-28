@@ -158,15 +158,29 @@
     flex: 1;
     padding: 12px;
     border: none;
-    background-color: var(--white);
-    cursor: pointer;
+    background: #fff;
+    color: #111;
     font-weight: 500;
-    transition: var(--transition);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+    box-shadow: none;
+    border-right: 1px solid var(--medium-gray);
 }
 
-.user-type-toggle button.active {
-    background-color: var(--primary-color);
-    color: var(--white);
+.user-type-toggle button:last-child {
+    border-right: none;
+}
+
+.user-type-toggle button.active,
+.user-type-toggle button[aria-pressed="true"] {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.user-type-toggle button:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Accessibility toggle */
