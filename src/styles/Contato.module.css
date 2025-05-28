@@ -84,6 +84,13 @@
     border: 1px solid #ccc;
     margin-bottom: 16px;
     font-size: 1rem;
+    background: #fff;
+    color: #111;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
 }
 
 .contact-form button {

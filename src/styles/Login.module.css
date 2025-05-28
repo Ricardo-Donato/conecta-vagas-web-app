@@ -46,6 +46,19 @@
     outline: none;
 }
 
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    background: #fff;
+    color: #111;
+}
+
+.login-form input[type="email"]::placeholder,
+.login-form input[type="password"]::placeholder,
+.login-form input[type="text"]::placeholder {
+    color: #888;
+}
+
 .remember-me {
     display: flex;
     align-items: center;
@@ -172,4 +185,18 @@
 
 .accessibility-control label {
     font-size: 0.9rem;
+}
+
+.login-form input[type="checkbox"] {
+    accent-color: #1976d2;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.login-form label {
+    color: #222;
+}
+
+.accessibility-controls label {
+    color: #222;
 }

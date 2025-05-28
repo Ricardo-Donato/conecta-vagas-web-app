@@ -6,13 +6,13 @@ export default function Sobre() {
         <header className={sobreStyle.header}>
             <div className="container">
                 <div className="logo">
-                    <Link href="..//index">
+                    <Link href="/">
                         <h1 className={sobreStyle.h1}>ConectaVagas</h1>
                     </Link>
                 </div>
                 <nav>
                     <ul>
-                        <li><Link href="../">Início</Link></li>
+                        <li><Link href="/">Início</Link></li>
                         <li><Link href="/sobre">Sobre</Link></li>
                         <li><Link href="/contato">Contato</Link></li>
                         <li><Link href="/login" className="btn-login">Login</Link></li>
@@ -67,7 +67,7 @@ export default function Sobre() {
                     <div className="footer-links">
                         <h3>Links Rápidos</h3>
                         <ul>
-                            <li><Link href="../index">Início</Link></li>
+                            <li><Link href="/">Início</Link></li>
                             <li><Link href="/contato">Contato</Link></li>
                             <li><Link href="/login">Login</Link></li>
                             <li><Link href="/cadastro">Cadastre-se</Link></li>

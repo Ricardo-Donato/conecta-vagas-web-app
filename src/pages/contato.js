@@ -5,11 +5,12 @@ import MessageContainer from "@/components/MessageContainer";
 import contatoStyle from "@/styles/Contato.module.css";
 
 export default function Contato() {
+    const [formData, setFormData] = useState({ nome: "", email: "", mensagem: "" });
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
     const router = useRouter();
 
-    // Fun��o que imita o showMessage original de HTML e JavaScript
+    // Função que imita o showMessage original de HTML e JavaScript
     const showMessage = useCallback((type, texto) => {
         setMessageType(type);
         setMessage(texto);
@@ -20,6 +21,10 @@ export default function Contato() {
         setMessage("");
         setMessageType("");
     }, []);
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
 
     const handleContact = (e) => {
         e.preventDefault();
@@ -44,7 +49,7 @@ export default function Contato() {
                     </div>
                     <nav>
                         <ul>
-                            <li><Link href="/">In�cio</Link></li>
+                            <li><Link href="/">Início</Link></li>
                             <li><Link href="/sobre">Sobre</Link></li>
                             <li><Link href="/contato" className="active">Contato</Link></li>
                             <li><Link href="/login" className="btn-login">Login</Link></li>
@@ -53,18 +58,18 @@ export default function Contato() {
                 </div>
             </header>
             {/* renderiza a mensagem */}
-            {mensagemStatus && (
+            {message && (
                 <MessageContainer
-                    type="success"
-                    message={mensagemStatus}
-                    onClear={clearMensagemStatus}
+                    type={messageType}
+                    message={message}
+                    onClear={clearMessage}
                 />
             )}
             <main className={contatoStyle.main}>
                 <div className={contatoStyle["contact-container"]}>
                     <div className={contatoStyle["contact-header"]}>
                         <h2>Entre em Contato</h2>
-                        <p>Fale conosco! Estamos prontos para ajudar voc�.</p>
+                        <p>Fale conosco! Estamos prontos para ajudar você.</p>
                     </div>
                     <div className={contatoStyle["contact-info"]}>
                         <p><i className="fas fa-envelope"></i> <Link href="mailto:contato@conectavagas.com">contato@conectavagas.com</Link></p>
@@ -116,13 +121,13 @@ export default function Contato() {
                             <p>Encontre talentos, encontre futuro</p>
                         </div>
                         <div className="footer-links">
-                            <h3>Links R�pidos</h3>
+                            <h3>Links Rápidos</h3>
                             <ul>
-                                <li><Link href="/">In�cio</Link></li>
+                                <li><Link href="/">Início</Link></li>
                                 <li><Link href="/sobre">Sobre</Link></li>
                                 <li><Link href="/login">Login</Link></li>
                                 <li><Link href="/cadastro">Cadastre-se</Link></li>
-                                <li><Link href="/termos_privacidade">Termos de Uso e Pol�tica de Privacidade</Link></li>
+                                <li><Link href="/termos_privacidade">Termos de Uso e Política de Privacidade</Link></li>
                             </ul>
                         </div>
                         <div className="footer-contact">
