@@ -74,7 +74,7 @@ export default function Login() {
                     </div>
                     <nav>
                         <ul>
-                            <li><Link href="/">In�cio</Link></li>
+                            <li><Link href="/">Início</Link></li>
                             <li><Link href="/sobre">Sobre</Link></li>
                             <li><Link href="/contato">Contato</Link></li>
                             <li><Link href="/login" className="btn-login">Login</Link></li>
@@ -192,13 +192,13 @@ export default function Login() {
                             <p>Encontre talentos, encontre futuro</p>
                         </div>
                         <div className="footer-links">
-                            <h3>Links R�pidos</h3>
+                            <h3>Links Rápidos</h3>
                             <ul>
-                                <li><Link href="/">In�cio</Link></li>
+                                <li><Link href="/">Início</Link></li>
                                 <li><Link href="/sobre">Sobre</Link></li>
                                 <li><Link href="/contato">Contato</Link></li>
                                 <li><Link href="/cadastro">Cadastre-se</Link></li>
-                                <li><Link href="/termos_privacidade">Termos de Uso e Pol�tica de Privacidade</Link></li>
+                                <li><Link href="/termos_privacidade">Termos de Uso e Política de Privacidade</Link></li>
                             </ul>
                         </div>
                         <div className="footer-contact">
