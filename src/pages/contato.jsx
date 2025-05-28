@@ -30,7 +30,6 @@ export default function Contato() {
         e.preventDefault();
         const dados = new FormData(e.target);
         const obj = Object.fromEntries(dados.entries());
-        console.log("Contact data:", obj);
 
         showMessage("success", "Mensagem enviada com sucesso! Em breve entraremos em contato.");
 
