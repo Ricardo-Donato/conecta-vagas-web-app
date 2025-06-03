@@ -1,3 +1,6 @@
+# Migração do repositório mercado-web-app
+Este é o novo repositório atualizado constantemente para migração de um projeto simples em HTML, CSS e JavaScript para ReactJS e NextJS.
+
 # ConectaVagas - Encontre talentos, encontre futuro
 
 ![Image](https://github.com/user-attachments/assets/576a4333-358e-485f-86ef-e32b7f67a094)
